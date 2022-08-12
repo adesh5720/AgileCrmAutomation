@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AgileCrmSuite">
+<listeners>
+	<listener class-name="agilecrm.TestListeners"></listener>
+</listeners>
+	<test thread-count="5" name="AgileCrmTest">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="agilecrm.LoginPageTest"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
